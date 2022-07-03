@@ -1,16 +1,15 @@
 public class Smartphone extends Product{
-    private String title;
+    //private String title;
     private String manufacturer;
 
     public Smartphone(int id, String name, int price, String title, String manufacturer) {
-        super(id,name,price);
-        this.title = title;
+        super(id,name,price,title);
+        //this.title = title;
         this.manufacturer = manufacturer;
 
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitle() {return title;
     }
 
     public void setTitle(String title) {
