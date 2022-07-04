@@ -1,3 +1,4 @@
+package ru.netology.javaqamvn12.services;
 public class ProductManager {
     private Repository repository;
     // добавьте необходимые поля, конструкторы и методы
@@ -6,23 +7,14 @@ public class ProductManager {
         this.repository = repository;
     }
 
-    //public ProductManager() {
-    //    this.repository = repository;
-    //}
-
-
     public void add(Product product) {
         repository.save(product);
     }
 
     public Product[] searchBy(String text) {
         Product[] result = new Product[0]; // тут будем хранить подошедшие запросу продукты
-       // int fact = 0;
         for (Product product : repository.findAll()) {
             if (matches(product, text)) {
-               // result[fact] = product;
-               // fact++;
-                // "добавляем в конец" массива result продукт product
             }
         }
         return result;

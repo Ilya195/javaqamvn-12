@@ -1,3 +1,4 @@
+package ru.netology.javaqamvn12.services;
 public class Product {
     protected int id;
     protected String name;
@@ -5,24 +6,13 @@ public class Product {
     protected String title;
 
 
-    public Product(int id,String name,int price,String title) {
+    public Product(int id, String name, int price, String title) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.title = title;
 
     }
-
-    //public int getId() {
-       // return id;
-   // }
-   // public String getName() {
-       // return name;
-    //}
-
-    //public int getPrice() {
-     //   return price;
-    //}
 
 
     public int getId() {
